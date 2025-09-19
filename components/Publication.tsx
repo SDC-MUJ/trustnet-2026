@@ -10,18 +10,25 @@ const Publication = () => {
             Publication
             <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-28 h-0.5 bg-orange-300 rounded-full"></div>
           </h2>
-          <p className="max-w-3xl text-center text-gray-700 text-lg">
+          {/* <p className="max-w-3xl text-center text-gray-700 text-lg">
             Submitted to Springer for approval.
-          </p>
+          </p> */}
           <p className="max-w-3xl text-justify text-gray-700 text-lg ">
             The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
           </p>
-          {/* <div className="flex flex-wrap justify-center items-center gap-8">
+          <div className="flex flex-wrap justify-center items-center gap-8">
             <Image
               src="/images/logo/scopus-logo.png"
               alt="Scopus Logo"
               width={200}
               height={100}
+              className="object-contain"
+            />
+            <Image
+              src="/images/logo/elsevier-logo.png"
+              alt="Springer Logo"
+              width={80}
+              height={80}
               className="object-contain"
             />
             <Image
@@ -31,7 +38,7 @@ const Publication = () => {
               height={100}
               className="object-contain"
             />
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
