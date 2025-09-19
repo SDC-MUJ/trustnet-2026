@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   FaShieldAlt,
   FaServer,
@@ -319,13 +320,36 @@ const CallForPapers = () => {
             <h2 className="text-3xl font-semibold mb-8">
               Publication and Indexing
             </h2>
-            <p className="text-lg mb-12">Submitted to Springer for approval.</p>
+            {/* <p className="text-lg mb-12">Submitted to Springer for approval.</p> */}
             <p className="text-lg mb-12 text-justify text-gray-700 ">
               The Microsoft CMT service was used for managing the peer-reviewing
               process for this conference. This service was provided for free by
               Microsoft and they bore all expenses, including costs for Azure
               cloud services as well as for software development and support.
             </p>
+            <div className="flex flex-wrap justify-center items-center gap-8">
+                        <Image
+                          src="/images/logo/scopus-logo.png"
+                          alt="Scopus Logo"
+                          width={200}
+                          height={100}
+                          className="object-contain"
+                        />
+                        <Image
+                          src="/images/logo/elsevier-logo.png"
+                          alt="Springer Logo"
+                          width={80}
+                          height={80}
+                          className="object-contain"
+                        />
+                        <Image
+                          src="/images/logo/springer.png"
+                          alt="Springer Logo"
+                          width={200}
+                          height={100}
+                          className="object-contain"
+                        />
+                      </div>
             {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.button
                 whileHover={{ scale: 1.02 }}
