@@ -150,6 +150,13 @@ const Navbar = () => {
           {/* <Image className='hidden lg:block w-24' src={'/images/logo/azadi-mahotsav-logo.png'} alt="Azadi Ka Amrit Mahotsav" width={100} height={50} /> */}
           <div className="hidden lg:flex items-center gap-4">
             <Image
+              className="w-32 mr-2"
+              src="/images/logo/scopus-logo.png"
+              alt="Scopus"
+              width={120}
+              height={30}
+            />
+            <Image
               className="w-32 mr-6"
               src="/images/logo/springer.png"
               alt="Springer"

@@ -335,13 +335,13 @@ const CallForPapers = () => {
                           height={100}
                           className="object-contain"
                         />
-                        <Image
+                        {/* <Image
                           src="/images/logo/elsevier-logo.png"
                           alt="Springer Logo"
                           width={80}
                           height={80}
                           className="object-contain"
-                        />
+                        /> */}
                         <Image
                           src="/images/logo/springer.png"
                           alt="Springer Logo"
