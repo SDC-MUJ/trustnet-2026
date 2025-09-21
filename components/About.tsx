@@ -92,11 +92,12 @@ const sdgoals = [
   },
 ];
 
-const aboutText =
-  "TrustNet 2026 - International Conference on Trusted Networks and Intelligent Systems will serve as a global platform for distinguished thought leaders from academia, industry, and policy to engage in meaningful dialogue on the future of trusted digital ecosystems. Through a series of keynote sessions, expert panels, and collaborative discussions, participants will critically examine the most pressing challenges and emerging opportunities in secure networks and intelligent systems. These deliberations will not only generate actionable insights but also foster cross-sector collaboration. The outcomes will be consolidated into a Consensus Document by the Conveners, capturing the collective vision and recommendations, which will be shared with leading national and international institutions and disseminated through reputed academic and policy publications.";
+const aboutText = `Established in 2011, Manipal University Jaipur (MUJ) is a proud member of the globally acclaimed Manipal Group, carrying forward the visionary legacy of Padma Shri Dr. T. M. A. Pai, whose mission was to make world-class education accessible and transformative. With NAAC A+ accreditation, MUJ stands as a multi-disciplinary, future-focused university that blends academic excellence with innovation. Offering a wide spectrum of career-oriented programs across engineering, architecture, design, law, management, humanities, sciences, and more, MUJ is committed to nurturing well-rounded individuals prepared for the demands of a global world.
+
+The university's reputation is reinforced by national and international recognition: ranked 58th in both the University and Engineering categories by NIRF 2025 and featured in prestigious global rankings such as QS Asia (701–750 band) and Times Higher Education (1201–1500 band). Beyond academics, MUJ is known for its state-of-the-art infrastructure, cutting-edge research ecosystem, and a campus designed with sustainability at its core. It is the proud recipient of a 5-star GRIHA rating and the ASSOCHAM Award for Best University Campus, testaments to its commitment to excellence in every dimension.`;
 
 const introText =
-  "The rapid advancement of digital technologies has transformed how societies, economies, and governments function. Yet, challenges around trust, security, privacy, and ethical use of intelligent systems remain pressing. With TrustNet 2026 – the International Conference on Trusted Networks and Intelligent Systems – we seek to explore how to build resilient, transparent, and human-centric digital infrastructures. The focus will be on advancing secure communication frameworks, data protection, ethical AI, and trust-enabled networks that align technological progress with societal well-being.";
+  "The Department of Computer Science and Engineering, Manipal University Jaipur, is pleased to announce that it will host the International Conference on Trusted Networks and Intelligent Systems (TrustNet 2026) on February 16–17, 2026. This conference is centered around a shared global goal: creating a safe, smart, and sustainable digital future. Discussions and research will focus on Cybersecurity and Artificial Intelligence (AI), contributing to both the United Nations Sustainable Development Goals (SDGs) and India’s Digital India vision. By promoting Digital Trust, Innovation, and Security, the event will support progress toward goals related to Innovation, Sustainable Cities, Strong Institutions, and Quality Education.";
 
 function* infiniteImages(images: string | any[]) {
   let index = 0;
@@ -259,7 +260,7 @@ const About = () => {
           <div className="w-full md:w-1/2">
             <Image
               className="w-full"
-              src={"/images/graphics/about-banner.png"}
+              src={"/images/graphics/about-banner-2.png"}
               alt="about-banner"
               width={600}
               height={600}
@@ -275,11 +276,18 @@ const About = () => {
 
       <div className="px-4 sm:px-8 md:px-16 py-12 md:p-16 text-center text-white bg-secondaryBg flex flex-col justify-center items-center gap-4">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-black">
-          About the Conference
+          About Manipal University Jaipur
         </h2>
-        <p className="text-base md:text-lg font-normal text-justify">
-          {aboutText}
-        </p>
+        <div className="flex flex-col gap-4">
+          {aboutText.split("\n\n").map((paragraph, index) => (
+            <p
+              key={index}
+              className="text-base md:text-lg font-normal text-justify"
+            >
+              {paragraph}
+            </p>
+          ))}
+        </div>
       </div>
     </div>
   );
