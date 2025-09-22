@@ -25,7 +25,7 @@ const Registration = () => {
             The authors agree that if the paper is accepted for oral/ poster
             presentation, at least one of the authors will register for the
             conference and present the paper at the conference venue. The
-            registration fee (inclusive of 18% GST) is given below for your
+            registration fee is given below for your
             reference:
           </p>
 
