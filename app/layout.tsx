@@ -12,7 +12,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "TrustNet 2026",
-  description: "Advancing Trusted Networks and Intelligent Systems for a Secure, Ethical, and Inclusive Digital Future.",
+  description: "International Conference on Trusted Networks & Intelligent System",
 };
 
 export default function RootLayout({
