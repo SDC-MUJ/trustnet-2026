@@ -19,17 +19,17 @@ const PhotoCard = ({
   website,
 }: PhotoCardProps) => {
   return (
-    <div className="flex flex-col items-center gap-1">
-      <div className="relative w-full h-[250px] border-2 border-[#c84b13] rounded-lg">
+    <div className="flex flex-col items-center gap-1 h-full w-full">
+      <div className="relative w-full aspect-[4/5] border-2 border-[#c84b13] rounded-lg">
         <Image
           src={profileimage}
           alt={fullName}
           fill
-          className="object-cover rounded-lg"
+          className="object-cover object-center rounded-lg"
         />
       </div>
-      <h3 className="text-lg font-semibold">{fullName}</h3>
-      <p className="text-sm text-gray-600 mb-4 leading-tight">{des}</p>
+      <h3 className="text-base font-semibold mt-2">{fullName}</h3>
+      <p className="text-xs text-gray-600 mb-2 leading-tight">{des}</p>
       <div className="flex gap-4">
         {linkedin && (
           <a
