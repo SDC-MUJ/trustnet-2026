@@ -309,6 +309,23 @@ const CallForPapers = () => {
             </div>
           </motion.div>
 
+          {/* Brochure Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-7xl mx-auto mt-20 text-center"
+          >
+            <Image
+              src="/brochure/trustnet-brochure.jpeg"
+              alt="TrustNet Brochure"
+              width={950}
+              height={600}
+              className="rounded-lg shadow-lg mx-auto"
+            />
+          </motion.div>
+
           {/* Publication and Indexing Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -326,32 +343,33 @@ const CallForPapers = () => {
               process for this conference. This service was provided for free by
               Microsoft and they bore all expenses, including costs for Azure
               cloud services as well as for software development and support.
-
-              The proceedings of TrustNet’26 will be published in Lecture Notes in Networks and Systems (LNNS). LNNS is abstracted and indexed in SCOPUS, INSPEC, WTI Frankfurt eG, zbMATH, SCImago. 
+              The proceedings of TrustNet’26 will be published in Lecture Notes
+              in Networks and Systems (LNNS). LNNS is abstracted and indexed in
+              SCOPUS, INSPEC, WTI Frankfurt eG, zbMATH, SCImago.
             </p>
             <div className="flex flex-wrap justify-center items-center gap-8">
-                        <Image
-                          src="/images/logo/scopus-logo.png"
-                          alt="Scopus Logo"
-                          width={200}
-                          height={100}
-                          className="object-contain"
-                        />
-                        {/* <Image
+              <Image
+                src="/images/logo/scopus-logo.png"
+                alt="Scopus Logo"
+                width={200}
+                height={100}
+                className="object-contain"
+              />
+              {/* <Image
                           src="/images/logo/elsevier-logo.png"
                           alt="Springer Logo"
                           width={80}
                           height={80}
                           className="object-contain"
                         /> */}
-                        <Image
-                          src="/images/logo/springer.png"
-                          alt="Springer Logo"
-                          width={200}
-                          height={100}
-                          className="object-contain"
-                        />
-                      </div>
+              <Image
+                src="/images/logo/springer.png"
+                alt="Springer Logo"
+                width={200}
+                height={100}
+                className="object-contain"
+              />
+            </div>
             {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.button
                 whileHover={{ scale: 1.02 }}
