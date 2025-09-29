@@ -119,7 +119,7 @@ const SpecialSession = () => {
 
           <div className="mt-8">
             <p>
-              The special session will be organized online mode. Kindly note
+              The special session will be organized through online mode only. Kindly note
               that no reimbursement or financial assistance will be provided.
             </p>
           </div>
