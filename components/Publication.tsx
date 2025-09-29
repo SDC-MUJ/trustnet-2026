@@ -13,8 +13,10 @@ const Publication = () => {
           {/* <p className="max-w-3xl text-center text-gray-700 text-lg">
             Submitted to Springer for approval.
           </p> */}
-          <p className="max-w-3xl text-justify text-gray-700 text-lg ">
+          <p className="max-w-5xl text-justify text-gray-700 text-lg ">
             The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+            
+            The proceedings of TrustNet’26 will be published in Lecture Notes in Networks and Systems (LNNS). LNNS is abstracted and indexed in SCOPUS, INSPEC, WTI Frankfurt eG, zbMATH, SCImago. 
           </p>
           <div className="flex flex-wrap justify-center items-center gap-8">
             <Image
