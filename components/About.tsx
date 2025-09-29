@@ -92,12 +92,14 @@ const sdgoals = [
   },
 ];
 
-const aboutText = `Established in 2011, Manipal University Jaipur (MUJ) is a proud member of the globally acclaimed Manipal Group, carrying forward the visionary legacy of Padma Shri Dr. T. M. A. Pai, whose mission was to make world-class education accessible and transformative. With NAAC A+ accreditation, MUJ stands as a multi-disciplinary, future-focused university that blends academic excellence with innovation. Offering a wide spectrum of career-oriented programs across engineering, architecture, design, law, management, humanities, sciences, and more, MUJ is committed to nurturing well-rounded individuals prepared for the demands of a global world.
-
-The university's reputation is reinforced by national and international recognition: ranked 58th in both the University and Engineering categories by NIRF 2025 and featured in prestigious global rankings such as QS Asia (701–750 band) and Times Higher Education (1201–1500 band). Beyond academics, MUJ is known for its state-of-the-art infrastructure, cutting-edge research ecosystem, and a campus designed with sustainability at its core. It is the proud recipient of a 5-star GRIHA rating and the ASSOCHAM Award for Best University Campus, testaments to its commitment to excellence in every dimension.`;
+const aboutText = `Established in 2011, Manipal University Jaipur (MUJ) is a proud member of the globally acclaimed Manipal Group, carrying forward the visionary legacy of Padma Shri Dr. T. M. A. Pai, whose mission was to make world-class education accessible and transformative.
+With NAAC A+ accreditation, MUJ stands as a multi-disciplinary, future-focused university that blends academic excellence with innovation. Offering a wide spectrum of career-oriented programs across engineering, architecture, design, law, management, humanities, sciences, and more, MUJ is committed to nurturing well-rounded individuals prepared for the demands of a global world.
+The university’s reputation is reinforced by national and international recognition: ranked 58th in both the University and Engineering categories by NIRF 2025 and featured in prestigious global rankings such as QS Asia (701–750 band) and Times Higher Education (1201–1500 band).
+Beyond academics, MUJ is known for its state-of-the-art infrastructure, cutting-edge research ecosystem, and a campus designed with sustainability at its core. It is the proud recipient of a 5-star GRIHA rating and the ASSOCHAM Award for Best University Campus, testaments to its commitment to excellence in every dimension.
+`;
 
 const introText =
-  "The Department of Computer Science and Engineering, Manipal University Jaipur, is pleased to announce that it will host the International Conference on Trusted Networks and Intelligent Systems (TrustNet 2026) on February 16–17, 2026. This conference is centered around a shared global goal: creating a safe, smart, and sustainable digital future. Discussions and research will focus on Cybersecurity and Artificial Intelligence (AI), contributing to both the United Nations Sustainable Development Goals (SDGs) and India’s Digital India vision. By promoting Digital Trust, Innovation, and Security, the event will support progress toward goals related to Innovation, Sustainable Cities, Strong Institutions, and Quality Education.";
+  "The <strong><b>Department of Computer Science and Engineering, Manipal University Jaipur,</b></strong> is pleased to announce that it will host the International Conference on Trusted Networks and Intelligent Systems (TrustNet 2026) on February 16–17, 2026. This conference is centered around a shared global goal: creating a safe, smart, and sustainable digital future. Discussions and research will focus on <b>Cybersecurity</b> and <b>Artificial Intelligence (AI)</b>, contributing to both the <b>United Nations Sustainable Development Goals (SDGs)</b> and <b>Digital India</b> vision. By promoting <b>Digital Trust, Innovation, and Security</b>, the event will support progress toward goals related to <b>Innovation, Sustainable Cities, Strong Institutions, and Quality Education</b>.";
 
 function* infiniteImages(images: string | any[]) {
   let index = 0;
@@ -267,9 +269,10 @@ const About = () => {
             />
           </div>
           <div className="flex flex-col gap-4 md:w-1/2 mt-6 md:mt-8">
-            <p className="text-base md:text-lg font-light text-justify">
-              {introText}
-            </p>
+            <p
+              className="text-base md:text-lg font-light text-justify"
+              dangerouslySetInnerHTML={{ __html: introText }}
+            />
           </div>
         </div>
       </div>
