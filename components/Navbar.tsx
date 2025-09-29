@@ -20,7 +20,23 @@ const Navbar = () => {
   const router = useRouter();
   const pathname = usePathname();
 
-  const handleNavigation = (link: string, newTab?: boolean) => {
+  const handleNavigation = (
+    link: string,
+    newTab?: boolean,
+    download?: string
+  ) => {
+    if (download) {
+      // Create a temporary anchor element to trigger download
+      const a = document.createElement("a");
+      a.href = link;
+      a.download = download;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setIsOpen(false);
+      return;
+    }
+
     if (newTab) {
       window.open(link, "_blank");
       setIsOpen(false);
@@ -113,7 +129,8 @@ const Navbar = () => {
                                         onClick={() =>
                                           handleNavigation(
                                             dropdownItem.link,
-                                            dropdownItem.newTab
+                                            dropdownItem.newTab,
+                                            dropdownItem.download
                                           )
                                         }
                                         className="text-sm text-gray-600 hover:text-gray-900 transition-all flex items-center gap-3 w-full pl-3"
@@ -229,7 +246,8 @@ const Navbar = () => {
                         onClick={() =>
                           handleNavigation(
                             dropdownItem.link,
-                            dropdownItem.newTab
+                            dropdownItem.newTab,
+                            dropdownItem.download
                           )
                         }
                         className="block w-full text-left px-4 py-2 hover:bg-gray-100 font-semibold whitespace-nowrap"

@@ -71,7 +71,7 @@ export const menu = [
                 id: 'brochure',
                 label: 'Conference Brochure',
                 link: '/brochure/trustnet-brochure.pdf',
-                newTab: true, 
+                download: 'trustnet-brochure.pdf'
             },
         ],
     },
