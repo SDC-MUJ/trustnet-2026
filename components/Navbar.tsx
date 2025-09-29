@@ -159,6 +159,22 @@ const Navbar = () => {
                         />
                         <div className="flex items-center gap-4">
                           <Image
+                            src="/images/logo/scopus-logo.png"
+                            alt="Scopus"
+                            width={120}
+                            height={30}
+                            className="w-32"
+                          />
+                          <Image
+                            src="/images/logo/springer.png"
+                            alt="Springer"
+                            width={120}
+                            height={30}
+                            className="w-32"
+                          />
+                        </div>
+                        <div className="flex items-center gap-4">
+                          <Image
                             src="/images/sdg-goals/SDG4.png"
                             alt="SDG 4"
                             width={45}
