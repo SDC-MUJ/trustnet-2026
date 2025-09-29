@@ -64,7 +64,7 @@ const Registration = () => {
           </div>
 
           <p className="mb-4 text-lg">
-            <strong>Paper Page Limit:</strong> 10-15 pages
+            <strong>Paper Page Limit:</strong> 10-12 pages
           </p>
           <p className="mb-6">
             <strong>Extra Page Charges (per page):</strong> INR 2000 / USD 25

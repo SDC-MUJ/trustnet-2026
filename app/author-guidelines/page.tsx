@@ -38,7 +38,6 @@ const AuthorGuidelines = () => {
             advancements in AI and computing applications.
           </p>
 
-          
           <p className="mb-8 text-center">
             <strong>Paper Submission Link:</strong>{" "}
             <a
@@ -51,7 +50,10 @@ const AuthorGuidelines = () => {
           </p>
 
           <p className="mb-6">
-            The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+            The Microsoft CMT service was used for managing the peer-reviewing
+            process for this conference. This service was provided for free by
+            Microsoft and they bore all expenses, including costs for Azure
+            cloud services as well as for software development and support.
           </p>
 
           <h2 className="text-3xl font-bold mb-4">
@@ -102,13 +104,60 @@ const AuthorGuidelines = () => {
               "Include the name, affiliation and e-mail of all authors in both the manuscript as well as on the submission portal. In addition, do not forget to mention the details of the corresponding author.",
               "The conclusion should be novel and supported by statistical remarks on the results of experimental study.",
               "Reference items should be complete. Avoid incomplete and not cited references in the list.",
-              "Download the Word/LaTeX template from here Word Format or LaTex Format and submit your manuscript as per the template. The manuscript should be kept within the page limit of 10-15 pages.",
+              "Download the Word/LaTeX template from here Word Format or LaTex Format and submit your manuscript as per the template. The manuscript should be kept within the page limit of 10-12 pages.",
             ].map((item, index) => (
               <li key={index} className="mb-2">
                 {item}
               </li>
             ))}
           </ol>
+
+          {/* Template Download Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 mb-12">
+            <a
+              href="/templates/word.zip"
+              className="inline-flex items-center px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition-colors duration-200"
+              download
+            >
+              <svg
+                className="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                />
+              </svg>
+              Download Word Template
+            </a>
+
+            <a
+              href="/templates/latex.zip"
+              className="inline-flex items-center px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition-colors duration-200"
+              download
+            >
+              <svg
+                className="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                />
+              </svg>
+              Download LaTeX Template
+            </a>
+          </div>
 
           {[
             "Confidentiality",
