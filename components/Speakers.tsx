@@ -13,7 +13,7 @@ const Speakers = () => {
           Our Eminent Speakers
           <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-28 h-0.5 bg-orange-300 rounded-full"></div>
         </h2>
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-16 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-16 w-full">
           {speakers.map((speaker, index) => (
             <PhotoCard
               key={index}
@@ -24,9 +24,7 @@ const Speakers = () => {
               website={speaker.website}
             />
           ))}
-        </div> */}
-
-        <p>will be updated soon...</p>
+        </div>
       </div>
     </div>
   );

@@ -84,90 +84,20 @@ export const menu = [
 
 export const speakers = [
     {
+        id: 1,
+        fullName: 'Dr. Anupam Tiwari',
+        des: 'Cyber Advisor , Ministry of Defence , Government of India',
+        profileimage: '/images/speakers/anupam-tiwari.png',
+        linkedin: '#',
+        website: '#'
+    },
+    {
         id: 2,
-        fullName: 'Name',
-        des: 'Designation',
-        profileimage: '/images/speakers/blank-pfp.jpg',
-        linkedin: '#',
-        website: '#'
-    },
-    {
-        id: 7,
-        fullName: 'Name',
-        des: 'Designation',
-        profileimage: '/images/speakers/blank-pfp.jpg',
-        linkedin: '#',
-        website: '#'
-    },
-    {
-        id: 3,
-        fullName: 'Name',
-        des: 'Designation',
-        profileimage: '/images/speakers/blank-pfp.jpg',
-        linkedin: '#',
-        website: '#'
-    },
-    {
-        id: 4,
-        fullName: 'Name',
-        des: 'Designation',
-        profileimage: '/images/speakers/blank-pfp.jpg',
-        linkedin: '#',
-        website: '#'
-    },
-    {
-        id: 5,
-        fullName: 'Name',
-        des: 'Designation',
-        profileimage: '/images/speakers/blank-pfp.jpg',
-        linkedin: '#',
-        website: '#'
-    },
-    // {
-    //     id: 6,
-    //     fullName: 'Dr Arushi Malik',
-    //     des: 'Divisional Commissioner, Jaipur',
-    //     profileimage: '',
-    // },
-    {
-        id: 8,
-        fullName: 'Name',
-        des: 'Designation',
-        profileimage: '/images/speakers/blank-pfp.jpg',
-        linkedin: '#',
-        website: '#'
-    },
-    {
-        id: 9,
-        fullName: 'Name',
-        des: 'Designation',
-        profileimage: '/images/speakers/blank-pfp.jpg',
-        linkedin: '#',
-        website: '#'
-    },
-    {
-        id: 10,
-        fullName: 'Name',
-        des: 'Designation',
-        profileimage: '/images/speakers/blank-pfp.jpg',
-        linkedin: '#',
-        website: '#'
-    },
-    {
-        id: 11,
-        fullName: 'Name',
-        des: 'Designation',
-        profileimage: '/images/speakers/blank-pfp.jpg',
-        linkedin: '#',
-        website: '#'
-    },
-    {
-        id: 12,
-        fullName: 'Name',
-        des: 'Designation',
-        profileimage: '/images/speakers/blank-pfp.jpg',
-        linkedin: '#',
-        website: '#'
+        fullName: 'Rajat Mittal ',
+        des: 'Associate Professor, IIT Kanpur',
+        profileimage: '/images/speakers/rajat-mittal.png',
+        linkedin: '',
+        website: 'https://www.cse.iitk.ac.in/users/rmittal/'
     },
 ];
 
