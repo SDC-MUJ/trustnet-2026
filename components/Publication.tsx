@@ -39,7 +39,7 @@ const Publication = () => {
               className="object-contain"
             />
           </div>
-          <p className="max-w-5xl text-lg mb-12 text-justify text-gray-700 ">
+          <p className="max-w-5xl text-lg text-justify text-gray-700 ">
               The proceedings of TrustNet’26 will be published in Lecture Notes
               in Networks and Systems (LNNS). LNNS is abstracted and indexed in
               SCOPUS, INSPEC, WTI Frankfurt eG, zbMATH, SCImago.
