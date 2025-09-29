@@ -131,7 +131,7 @@ const Navbar = () => {
                           </div>
                         ))}
                       </div>
-                      <div>
+                      <div className="flex flex-col gap-4">
                         <Image
                           src="/images/graphics/hybrid-icon.png"
                           alt="Hybrid Icon"
@@ -140,6 +140,26 @@ const Navbar = () => {
                           className="cursor-pointer"
                           onClick={() => handleNavigation("/#register")}
                         />
+                        <div className="flex items-center gap-4">
+                          <Image
+                            src="/images/sdg-goals/SDG4.png"
+                            alt="SDG 4"
+                            width={45}
+                            height={45}
+                          />
+                          <Image
+                            src="/images/sdg-goals/SDG9.png"
+                            alt="SDG 9"
+                            width={45}
+                            height={45}
+                          />
+                          <Image
+                            src="/images/sdg-goals/SDG11.png"
+                            alt="SDG 11"
+                            width={45}
+                            height={45}
+                          />
+                        </div>
                       </div>
                     </SheetDescription>
                   </SheetHeader>
