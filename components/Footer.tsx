@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { CounterAPI } from "counterapi";
@@ -8,7 +8,7 @@ import type { JSX } from "react";
 
 const Footer = () => {
   const [visitorCount, setVisitorCount] = useState(99);
-  const counter = new CounterAPI();
+  const counter = useMemo(() => new CounterAPI(), []);
 
   useEffect(() => {
     counter.up("trustnet2026.com", "trustnet").then((res) => {

@@ -199,7 +199,7 @@ const useInView = () => {
         observer.unobserve(currentRef);
       }
     };
-  }, []);
+  }, [ref]);
 
   return [ref, isInView] as const;
 };
