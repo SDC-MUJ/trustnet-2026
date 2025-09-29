@@ -1,10 +1,21 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { CounterAPI } from "counterapi";
+import type { JSX } from "react";
 
 const Footer = () => {
+  const [visitorCount, setVisitorCount] = useState(99);
+  const counter = new CounterAPI();
+
+  useEffect(() => {
+    counter.up("trustnet2026.com", "trustnet").then((res) => {
+      setVisitorCount((res.Count as number) + 99);
+    });
+  }, []);
+
   return (
     <footer
       id="footer"
@@ -74,16 +85,20 @@ const Footer = () => {
           <p className="text-sm text-gray-300 font-light">
             &copy; 2025 All rights reserved.
           </p>
-            <p className="text-sm text-gray-400 flex items-center gap-1">
-              Developed by -{" "}
-              <Image
-                src="/images/logo/sdc-logo-white.png"
-                alt="SDC Logo"
-                width={30}
-                height={20}
-              />{" "}
-              WebDev Team
-            </p>
+          <p className="text-sm font-bold text-gray-300">
+            Total Visitors:{" "}
+            <span className="p-1 font-bold">{visitorCount}</span>
+          </p>
+          <p className="text-sm text-gray-400 flex items-center gap-1">
+            Developed by -{" "}
+            <Image
+              src="/images/logo/sdc-logo-white.png"
+              alt="SDC Logo"
+              width={30}
+              height={20}
+            />{" "}
+            WebDev Team
+          </p>
         </div>
       </div>
     </footer>
