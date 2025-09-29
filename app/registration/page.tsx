@@ -93,7 +93,7 @@ const Registration = () => {
             <h3 className="text-xl font-bold mb-2">
               Step 2: Fill the Registration form
             </h3>
-            <a href="#" className="text-blue-600 hover:underline">
+            <a href="https://forms.gle/nmNcTG71JNppjQP16" className="text-blue-600 hover:underline" target="_blank">
               Click here for the registration form
             </a>
           </div>
