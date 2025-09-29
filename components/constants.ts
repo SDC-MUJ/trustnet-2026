@@ -80,6 +80,23 @@ export const menu = [
         link: '#footer', // Changed from '/#Contact'
         newTab: false,
     },
+    {
+        id: 7,
+        label: 'Important Links',
+        link: '#',
+        dropdownItems: [
+            {
+                id: 'reviewer-details',
+                label: 'Form for reviewer details',
+                link: '/#',
+            },
+            {
+                id: 'special-session',
+                label: 'Special Session Proposal',
+                link: '/special-session',
+            },
+        ],
+    },
 ]
 
 export const speakers = [

@@ -221,7 +221,7 @@ const Navbar = () => {
                 {item.dropdownItems && <ChevronDown className="w-4 h-4" />}
               </button>
               {item.dropdownItems && (
-                <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-48 bg-white border rounded-md shadow-lg transition-all duration-200">
+                <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-55 bg-white border rounded-md shadow-lg transition-all duration-200">
                   <div className="py-1">
                     {item.dropdownItems.map((dropdownItem) => (
                       <button
