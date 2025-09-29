@@ -42,10 +42,10 @@ const SpecialSession = () => {
                       trustnet2026@gmail.com
                     </a>
                     <ol className="list-[lower-alpha] ml-8 mt-2 space-y-2">
-                      <li>Aim & Scope/ Objectives</li>
+                      <li>Aim &amp; Scope/ Objectives</li>
                       <li>Sub-topics of interest</li>
                       <li>Contact information of the Organizer</li>
-                      <li>Organizers' short biography</li>
+                      <li>Organizers&apos; short biography</li>
                       <li>
                         List of potential reviewers/ TPC capable of reviewing
                         papers submitted to the special session
@@ -56,10 +56,10 @@ const SpecialSession = () => {
                 </ol>
               </li>
               <li className="mt-4">
-                Proposals will be duly evaluated by the TrustNet'26 Technical
-                Committee based on the novelty and associated impact of the
-                topic and, the same will be intimated via email to the session
-                organizer with further guidelines.
+                Proposals will be duly evaluated by the TrustNet&apos;26
+                Technical Committee based on the novelty and associated impact
+                of the topic and, the same will be intimated via email to the
+                session organizer with further guidelines.
               </li>
               <li>
                 Organizers of Special Sessions are required to announce/
@@ -85,10 +85,10 @@ const SpecialSession = () => {
               </li>
               <li>
                 The third qualified review (Second Phase) will be done by the
-                Technical Committee/ Reviewer Pool of TrustNet'26 who will make
-                the final decision on acceptance/ rejection. The decision about
-                acceptance/ rejection will also be intimated to the respective
-                organizers of the special session.
+                Technical Committee/ Reviewer Pool of TrustNet&apos;26 who will
+                make the final decision on acceptance/ rejection. The decision
+                about acceptance/ rejection will also be intimated to the
+                respective organizers of the special session.
               </li>
               <li>
                 The acceptance rate of papers submitted for the special session
@@ -99,7 +99,7 @@ const SpecialSession = () => {
                 For successful execution of the special session minimum 5
                 accepted papers are required, and the Organizer of the special
                 session will be invited to chair the session. However, the
-                TrustNet'26 organizing committee may combine papers from
+                TrustNet&apos;26 organizing committee may combine papers from
                 different sessions, if the number of papers is less than 5 in a
                 single session.
               </li>
@@ -126,7 +126,7 @@ const SpecialSession = () => {
 
           <div className="mt-8 text-lg">
             <p className="mb-1">Warm regards,</p>
-            <p className="mb-1">Team TrustNet'26</p>
+            <p className="mb-1">Team TrustNet&apos;26</p>
             <p className="mb-1">Manipal University Jaipur</p>
             <p>
               Email:{" "}

@@ -14,7 +14,7 @@ const Footer = () => {
     counter.up("trustnet2026.com", "trustnet").then((res) => {
       setVisitorCount((res.Count as number) + 99);
     });
-  }, []);
+  }, [counter]);
 
   return (
     <footer

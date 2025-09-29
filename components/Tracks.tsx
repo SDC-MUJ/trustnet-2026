@@ -194,8 +194,9 @@ const useInView = () => {
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      const currentRef = ref.current; // Store ref value in a variable
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
