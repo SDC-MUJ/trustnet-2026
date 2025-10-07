@@ -12,6 +12,7 @@ import {
   FaClipboardCheck,
   FaUserLock,
   FaEllipsisH,
+  FaCube, // Add this import for the new icon
 } from "react-icons/fa";
 
 const getIconForTrack = (index: number) => {
@@ -23,6 +24,7 @@ const getIconForTrack = (index: number) => {
     FaMobileAlt,
     FaClipboardCheck,
     FaUserLock,
+    FaCube, // New icon for computational complexity
     FaEllipsisH,
   ];
   const Icon = icons[index] || FaEllipsisH;
@@ -131,6 +133,13 @@ const tracksData = [
       "Security usability",
       "Trust Management and Reputation Systems",
       "Intrusion Detection and Prevention Systems",
+    ],
+  },
+  {
+    title: "AREA 8: COMPUTATIONAL COMPLEXITY THEORY AND ITS APPLICATIONS",
+    topics: [
+      "Computational Complexity theory and its Application in Computer Networks",
+      "Quantum Query Complexity",
     ],
   },
 ];

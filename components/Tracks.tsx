@@ -13,6 +13,7 @@ import {
   FaEllipsisH,
   FaChevronDown,
   FaTimes,
+  FaCube, // Add this import for the new icon
 } from "react-icons/fa";
 
 interface TrackData {
@@ -124,6 +125,13 @@ const tracksData: TrackData[] = [
       "Intrusion Detection and Prevention Systems",
     ],
   },
+  {
+    title: "AREA 8: COMPUTATIONAL COMPLEXITY THEORY AND ITS APPLICATIONS",
+    topics: [
+      "Computational Complexity theory and its Application in Computer Networks",
+      "Quantum Query Complexity",
+    ],
+  },
   //   {
   //     title: "OTHER TOPICS",
   //     topics: [
@@ -166,6 +174,7 @@ const getIconForTrack = (index: number) => {
     FaMobileAlt, // Area 5
     FaClipboardCheck, // Area 6
     FaUserLock, // Area 7
+    FaCube,
     FaEllipsisH, // Other Topics
   ];
   const Icon = icons[index] || FaEllipsisH;
