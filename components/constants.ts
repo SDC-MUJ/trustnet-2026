@@ -89,7 +89,8 @@ export const menu = [
             {
                 id: 'reviewer-details',
                 label: 'Form for reviewer details',
-                link: '/#',
+                link: 'https://forms.gle/RJaeQfVdSoHR5mzc8',
+                newTab: true,
             },
             {
                 id: 'special-session',
