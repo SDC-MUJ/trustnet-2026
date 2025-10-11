@@ -54,6 +54,7 @@ const nationalMembers = [
         "Director, CSIR-CSMCRI, Distinguished Professor AcSIR, Bhavnagar, Gujrat, India",
     ],
     ["Manu Pratap Singh", "Dr. Bhimrao Ambedkar University, Agra, India"],
+    ["Amit Chaturvedi", "Govt Engineering College Ajmer, Ajmer, India"],
     ["Sunil Kumar Muttoo", "University of Delhi, India"],
     ["Vipin Tyagi", "Jaypee University of Engineering and Technology Guna, India"],
     ["K. Lobiyal", "Jawaharlal Nehru University, Delhi, India"],
