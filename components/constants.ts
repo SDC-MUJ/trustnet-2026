@@ -110,14 +110,14 @@ export const speakers = [
         linkedin: '#',
         website: '#'
     },
-    {
-        id: 2,
-        fullName: 'Rajat Mittal ',
-        des: 'Associate Professor, IIT Kanpur',
-        profileimage: '/images/speakers/rajat-mittal.png',
-        linkedin: '',
-        website: 'https://www.cse.iitk.ac.in/users/rmittal/'
-    },
+    // {
+    //     id: 2,
+    //     fullName: 'Rajat Mittal ',
+    //     des: 'Associate Professor, IIT Kanpur',
+    //     profileimage: '/images/speakers/rajat-mittal.png',
+    //     linkedin: '',
+    //     website: 'https://www.cse.iitk.ac.in/users/rmittal/'
+    // },
 ];
 
 export const committee = {
