@@ -246,15 +246,22 @@ const CallForPapers = () => {
                       : "Registration End"}
                   </h3>
 
-                  <p className="text-gray-600">
-                    {index === 1
-                      ? "September 9, 2025"
-                      : index === 2
-                      ? "November 15, 2025"
-                      : index === 3
-                      ? "December 15, 2025"
-                      : "December 25, 2025"}
-                  </p>
+                  <div className="text-gray-600">
+                    {index === 1 ? (
+                      "September 9, 2025"
+                    ) : index === 2 ? (
+                      <div className="flex flex-col items-center">
+                        {/* <span className="text-xs text-red-600 line-through decoration-red-600 decoration-2">
+                          November 15, 2025
+                        </span> */}
+                        <span className="text-gray-600">November 30, 2025</span>
+                      </div>
+                    ) : index === 3 ? (
+                      "December 15, 2025"
+                    ) : (
+                      "December 25, 2025"
+                    )}
+                  </div>
                 </motion.div>
               ))}
             </div>

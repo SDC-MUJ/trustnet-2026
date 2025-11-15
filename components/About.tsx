@@ -189,9 +189,14 @@ const About = () => {
                     <span className="text-gray-800 text-sm sm:text-base font-semibold">
                       Submission
                     </span>
-                    <span className="text-gray-600 text-xs sm:text-sm font-medium whitespace-nowrap">
-                      November 15, 2025
-                    </span>
+                    <div className="flex flex-col items-start">
+                      <span className="text-xs sm:text-sm font-medium text-red-600 line-through decoration-red-600 decoration-2 whitespace-nowrap">
+                        November 15, 2025
+                      </span>
+                      <span className="text-gray-600 text-xs sm:text-sm font-medium whitespace-nowrap">
+                        November 30, 2025
+                      </span>
+                    </div>
                   </div>
                 </div>
 
