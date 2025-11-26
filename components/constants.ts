@@ -110,6 +110,13 @@ export const speakers = [
         linkedin: '#',
         website: '#'
     },
+    {
+        id: 2,
+        fullName: 'Apurva K Vangujar',
+        des: 'Cyber Security Engineer, Jaguar Land Rover',
+        profileimage: '/images/speakers/apurva.png',
+        linkedin: 'https://ie.linkedin.com/in/apurva-k-vangujar-a36a627b',
+    },
     // {
     //     id: 2,
     //     fullName: 'Rajat Mittal ',
