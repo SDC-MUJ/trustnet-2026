@@ -157,7 +157,15 @@ const Navbar = () => {
                           className="cursor-pointer"
                           onClick={() => handleNavigation("/#register")}
                         />
+
                         <div className="flex items-center gap-4">
+                          <Image
+                            src="/images/logo/unstop-logo.png"
+                            alt="Unstop"
+                            width={90}
+                            height={24}
+                            className="w-20"
+                          />
                           <Image
                             src="/images/logo/scopus-logo.png"
                             alt="Scopus"
@@ -202,6 +210,13 @@ const Navbar = () => {
           </div>
           {/* <Image className='hidden lg:block w-24' src={'/images/logo/azadi-mahotsav-logo.png'} alt="Azadi Ka Amrit Mahotsav" width={100} height={50} /> */}
           <div className="hidden lg:flex items-center gap-4">
+            <Image
+              className="w-24 mr-2"
+              src="/images/logo/unstop-logo.png"
+              alt="Unstop"
+              width={96}
+              height={24}
+            />
             <Image
               className="w-32 mr-2"
               src="/images/logo/scopus-logo.png"

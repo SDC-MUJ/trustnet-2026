@@ -10,6 +10,7 @@ import Tracks from "@/components/Tracks";
 import Jaipur from "@/components/Jaipur";
 import Venue from "@/components/Venue";
 import Publication from "@/components/Publication";
+import Partners from "@/components/Partners";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <Tracks />
       <Speakers />
       <Publication />
+      <Partners />
       <Jaipur />
       <Venue />
       {/* <Contact /> */}
