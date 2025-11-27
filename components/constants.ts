@@ -256,6 +256,20 @@ export const committee = {
             picture: '/images/committee/satpal-singh-kushwaha.jpg',
         },
         {
+            id: 11,
+            name: 'Dr. Lokesh Sharma',
+            des: 'Associate Professor, IT',
+            role: 'Technical Chair',
+            picture: '/images/committee/lokesh-sharma.jpg',
+        },
+        {
+            id: 12,
+            name: 'Dr. Sumit Srivastava',
+            des: 'Assistant Professor, IT',
+            role: 'Technical Chair',
+            picture: '/images/committee/sumit-srivastava.jpg',
+        },
+        {
             id: 10,
             name: 'Dr. Rishi Gupta',
             des: 'Associate Professor, CSE',
