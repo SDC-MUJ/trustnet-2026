@@ -179,9 +179,9 @@ const AuthorGuidelines = () => {
                     be submitted for publication through our publication
                     partners. Before final publication, proofs may be sent to
                     the corresponding author designated in the manuscript. It is
-                    crucial to provide the corresponding author's correct email
-                    address. Please regularly visit the conference website for
-                    updates on publication specifics.
+                    crucial to provide the corresponding author&apos;s correct
+                    email address. Please regularly visit the conference website
+                    for updates on publication specifics.
                   </p>
                   <p className="mb-6">
                     Papers found to be plagiarised/having ethical concerns
@@ -197,7 +197,7 @@ const AuthorGuidelines = () => {
                   {section === "Confidentiality" &&
                     "The conference committee maintains strict confidentiality throughout the process, from submission to decision-making on every article considered for review. Reviewers involved in this whole review process are from reputed universities throughout the globe, and the practice of keeping all information confidential during the review is part of the standard communication with all reviewers."}
                   {section === "Review Process" &&
-                    "Once an article is submitted to the conference, the authors agree to our review policy, where the article will be peer-reviewed by professional reviewers after being checked for similarity index and plagiarism by plagiarism detection software (Turnitin). TrustNet 2026 respects Intellectual Property Rights. Plagiarism is defined as the incorrect appropriation of someone else's information, thoughts, or ideas and presenting them as one's own. The conference committee will not tolerate this sort of breach of ethical norms at any cost. Any article with more than 18% similarity index will be rejected immediately without further consideration. The similarity should not be greater than 2% from a single source."}
+                    "Once an article is submitted to the conference, the authors agree to our review policy, where the article will be peer-reviewed by professional reviewers after being checked for similarity index and plagiarism by plagiarism detection software (Turnitin). TrustNet 2026 respects Intellectual Property Rights. Plagiarism is defined as the incorrect appropriation of someone else&apos;s information, thoughts, or ideas and presenting them as one&apos;s own. The conference committee will not tolerate this sort of breach of ethical norms at any cost. Any article with more than 18% similarity index will be rejected immediately without further consideration. The similarity should not be greater than 2% from a single source."}
                   {section === "Dual/Double Submissions Policy" &&
                     "Our conference aims to present novel research and ensure efficient use of reviewers' efforts. Authors submitting manuscripts acknowledge that their work has not been previously published or accepted for publication in a substantially similar form in any peer-reviewed venue. Any breach of these conditions will result in rejection and notification to the other venue where the submission was made. Submissions should be original and not duplicate prior publications or ongoing submissions. Include citations in your manuscript if you need to reference another paper concurrently submitted to the conference. Clearly articulate in your paper how your submission differs significantly from these concurrent works and provide the additional papers in the supplemental material. Authors are encouraged to contact the Program Chairs for further clarification if needed."}
                   {section === "Attendance responsibilities" &&
