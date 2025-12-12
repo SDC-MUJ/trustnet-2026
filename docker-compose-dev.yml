@@ -1,0 +1,61 @@
+services:
+  # Next.js Frontend
+  frontend:
+    image: docker.sdcmuj.com/trustnet:main
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: trustnet-frontend
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      - HOSTNAME=0.0.0.0
+      - PORT=3000
+      - NEXT_PUBLIC_REGISTRATION_URL=${NEXT_PUBLIC_REGISTRATION_URL}
+    restart: unless-stopped
+    networks:
+      - trustnet-network
+
+  # Python Streamlit Backend
+  registration-backend:
+    image: docker.sdcmuj.com/trustnet-registration:main
+    build:
+      context: ./Registration-form
+      dockerfile: Dockerfile
+    container_name: trustnet-registration
+    ports:
+      - "127.0.0.1:8502:8502"
+    environment:
+      - PORT=8502
+      - RENDER=true
+      - HEADLESS=true
+      # Credentials injected from .env file
+      - OAUTH_REFRESH_TOKEN=${OAUTH_REFRESH_TOKEN}
+      - WEB_CLIENT_ID=${WEB_CLIENT_ID}
+      - WEB_CLIENT_SECRET=${WEB_CLIENT_SECRET}
+      - WEB_TOKEN_URI=${WEB_TOKEN_URI:-https://oauth2.googleapis.com/token}
+      - GOOGLE_SHEET_ID=${GOOGLE_SHEET_ID}
+      - GOOGLE_DRIVE_FOLDER_ID=${GOOGLE_DRIVE_FOLDER_ID}
+      - ADMIN_EMAIL=${ADMIN_EMAIL}
+      - ADMIN_PIN=${ADMIN_PIN}
+      - SUBMISSION_DRIVE_EMAIL=${SUBMISSION_DRIVE_EMAIL}
+    volumes:
+      - ./volumes/submissions:/app/submitted_papers
+      - ./volumes/csv:/app/submissions.csv
+    restart: unless-stopped
+    networks:
+      - trustnet-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8502/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  trustnet-network:
+    driver: bridge
+
+volumes:
+  submissions:
+  csv:
