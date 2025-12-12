@@ -1,0 +1,48 @@
+# Create correct .gitignore
+cat > .gitignore << 'EOF'
+# Credentials & Secrets - TOP PRIORITY
+*.json
+!package.json
+!tsconfig.json
+*.key.json
+client_secret.json
+service-account*.json
+credentials.json
+*-credentials.json
+echo ".env" >> .gitignore
+
+# OAuth Tokens
+*.pickle
+.streamlit/*.pickle
+.streamlit/secrets.toml
+.streamlit/drive_token.pickle
+.streamlit/google_token.pickle
+
+# Environment
+.env
+.env.local
+*.key
+
+# Local storage
+submitted_papers/
+submissions.csv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+venv/
+.venv/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+EOF
