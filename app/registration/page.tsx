@@ -97,7 +97,7 @@ const Registration = () => {
               Step 2: Fill the Registration form
             </h3>
             <a
-              href={process.env.NEXT_PUBLIC_REGISTRATION_URL || "#"}
+              href="https://trustnetcon.in/registration-form"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
