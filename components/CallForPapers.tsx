@@ -257,9 +257,9 @@ const CallForPapers = () => {
                         <span className="text-gray-600">November 30, 2025</span>
                       </div>
                     ) : index === 3 ? (
-                      "December 15, 2025"
+                      "December 30, 2025"
                     ) : (
-                      "December 25, 2025"
+                      "December 30, 2025"
                     )}
                   </div>
                 </motion.div>
