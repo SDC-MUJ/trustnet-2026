@@ -1392,9 +1392,8 @@ if uploaded_pdf:
     col1.success(f" {uploaded_pdf.name}")
 
 if uploaded_image:
-    col2.success(f"{uploaded_image.name}")
-    if uploaded_image.type.startswith("image"):
-        col2.image(uploaded_image, width=200)
+    col2.success(f" {uploaded_image.name}")
+
 
 # EXTRACTION LOGIC
 if uploaded_pdf and uploaded_image:
@@ -1682,28 +1681,149 @@ if uploaded_pdf and uploaded_image:
 )
 
         st.markdown("####  Presenter Information")
-        st.info("Please provide details about the person who will present this paper")
+        st.info(" Select from extracted data or enter manually")
+        
+        # Prepare extracted options for dropdowns
+        authors_list = []
+        if authors_value:
+            authors_list = [a.strip() for a in authors_value.split(";") if a.strip()]
+        
+        affiliations_list = []
+        if affiliations_value:
+            affiliations_list = [a.strip() for a in affiliations_value.split(";") if a.strip()]
+        
+        emails_list = metadata.get('emails', [])
+        
         
         col_p1, col_p2 = st.columns(2)
         with col_p1:
-            presenter_name = st.text_input(
-                "Presenter Name *",
-                help="Name of the person presenting the paper"
-            )
-            presenter_email = st.text_input(
-                "Presenter Email *",
-                help="Email address of the presenter"
-            )
+
+            st.markdown("**Presenter Name** *")
+            if authors_list:
+                name_options = ["-- Select from authors --"] + authors_list + ["-- Enter manually --"]
+                name_selection = st.selectbox(
+                    "Choose option:",
+                    options=name_options,
+                    help="Select from extracted authors or enter manually",
+                    key="presenter_name_dropdown",
+                    label_visibility="collapsed"
+                )
+                
+                if name_selection == "-- Enter manually --" or name_selection == "-- Select from authors --":
+                    presenter_name = st.text_input(
+                        "Type presenter name",
+                        help="Name of the person presenting the paper",
+                        key="presenter_name_manual",
+                        placeholder="Enter name manually",
+                        label_visibility="collapsed"
+                    )
+                else:
+                    presenter_name = name_selection
+                    st.text_input(
+                        "Selected name",
+                        value=f"✓ {presenter_name}",
+                        disabled=True,
+                        help="Selected from authors list",
+                        key="presenter_name_selected",
+                        label_visibility="collapsed"
+                    )
+            else:
+                presenter_name = st.text_input(
+                    "Enter presenter name",
+                    help="Name of the person presenting the paper",
+                    key="presenter_name_default",
+                    placeholder="No authors extracted - enter manually",
+                    label_visibility="collapsed"
+                )
+            
+
+            st.markdown("**Presenter Email** *")
+            if emails_list:
+                email_options = ["-- Select from extracted emails --"] + emails_list + ["-- Enter manually --"]
+                email_selection = st.selectbox(
+                    "Choose option:",
+                    options=email_options,
+                    help="Select from extracted emails or enter manually",
+                    key="presenter_email_dropdown",
+                    label_visibility="collapsed"
+                )
+                
+                if email_selection == "-- Enter manually --" or email_selection == "-- Select from extracted emails --":
+                    presenter_email = st.text_input(
+                        "Type presenter email",
+                        help="Email address of the presenter",
+                        key="presenter_email_manual",
+                        placeholder="Enter email manually",
+                        label_visibility="collapsed"
+                    )
+                else:
+                    presenter_email = email_selection
+                    st.text_input(
+                        "Selected email",
+                        value=f"✓ {presenter_email}",
+                        disabled=True,
+                        help="Selected from extracted emails",
+                        key="presenter_email_selected",
+                        label_visibility="collapsed"
+                    )
+            else:
+                presenter_email = st.text_input(
+                    "Enter presenter email",
+                    help="Email address of the presenter",
+                    key="presenter_email_default",
+                    placeholder="No emails extracted - enter manually",
+                    label_visibility="collapsed"
+                )
         
         with col_p2:
-            presenter_affiliation = st.text_input(
-                "Presenter Affiliation *",
-                help="Institution/organization of the presenter"
-            )
+            # ===== PRESENTER AFFILIATION - Dropdown with custom option =====
+            st.markdown("**Presenter Affiliation** *")
+            if affiliations_list:
+                affiliation_options = ["-- Select from affiliations --"] + affiliations_list + ["-- Enter manually --"]
+                affiliation_selection = st.selectbox(
+                    "Choose option:",
+                    options=affiliation_options,
+                    help="Select from extracted affiliations or enter manually",
+                    key="presenter_affiliation_dropdown",
+                    label_visibility="collapsed"
+                )
+                
+                if affiliation_selection == "-- Enter manually --" or affiliation_selection == "-- Select from affiliations --":
+                    presenter_affiliation = st.text_input(
+                        "Type presenter affiliation",
+                        help="Institution/organization of the presenter",
+                        key="presenter_affiliation_manual",
+                        placeholder="Enter affiliation manually",
+                        label_visibility="collapsed"
+                    )
+                else:
+                    presenter_affiliation = affiliation_selection
+                    st.text_input(
+                        "Selected affiliation",
+                        value=f"✓ {presenter_affiliation}",
+                        disabled=True,
+                        help="Selected from affiliations list",
+                        key="presenter_affiliation_selected",
+                        label_visibility="collapsed"
+                    )
+            else:
+                presenter_affiliation = st.text_input(
+                    "Enter presenter affiliation",
+                    help="Institution/organization of the presenter",
+                    key="presenter_affiliation_default",
+                    placeholder="No affiliations extracted - enter manually",
+                    label_visibility="collapsed"
+                )
+            
+            # Mobile number (no dropdown needed)
+            st.markdown("**Presenter Mobile** *")
             presenter_mobile = st.text_input(
-                "Presenter Mobile *",
-                help="Contact number of the presenter"
-            )
+                "Enter mobile number",
+                help="Contact number of the presenter",
+                key="presenter_mobile",
+                placeholder="+91 1234567890",
+                label_visibility="collapsed"
+          )
         
         col_n1, col_n2 = st.columns(2)
         with col_n1:
@@ -1882,7 +2002,7 @@ if uploaded_pdf and uploaded_image:
 else:
     st.info(" Please upload both your research paper (PDF) and transaction receipt to begin")
     
-    with st.expander("📋 Submission Requirements"):
+    with st.expander(" Submission Requirements"):
         st.markdown("""
         **Required Documents:**
         - Research paper in PDF format
@@ -1903,4 +2023,5 @@ else:
 
 st.markdown("---")
 st.markdown("<div style='text-align: center; color: gray;'>Developed by SDC - Hardik Gupta</div>", unsafe_allow_html=True)
+
 
