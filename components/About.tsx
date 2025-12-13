@@ -225,7 +225,7 @@ const About = () => {
                         December 15, 2025
                       </span>
                       <span className="text-gray-600 text-xs sm:text-sm font-medium whitespace-nowrap">
-                        December 30, 2025
+                        January 10, 2026
                       </span>
                   </div>
                 </div>
@@ -251,8 +251,11 @@ const About = () => {
                     <span className="text-gray-800 text-sm sm:text-base font-semibold">
                       Registration End
                     </span>
+                    <span className="text-xs sm:text-sm font-medium text-red-600 line-through decoration-red-600 decoration-2 whitespace-nowrap">
+                        December 25, 2025
+                    </span>
                     <span className="text-gray-600 text-xs sm:text-sm font-medium whitespace-nowrap">
-                      December 25, 2025
+                        January 14, 2026
                     </span>
                   </div>
                 </div>
