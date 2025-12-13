@@ -254,7 +254,7 @@ const CallForPapers = () => {
                         {/* <span className="text-xs text-red-600 line-through decoration-red-600 decoration-2">
                           November 15, 2025
                         </span> */}
-                        <span className="text-gray-600">November 30, 2025</span>
+                        <span className="text-gray-600">December 30, 2025</span>
                       </div>
                     ) : index === 3 ? (
                       "December 30, 2025"
