@@ -1,3 +1,5 @@
+
+
 import streamlit as st
 import sys
 import os
@@ -1649,9 +1651,7 @@ st.markdown("""
     <p><strong>International Conference on Trusted Networks and Intelligent Systems (TrustNet'26)</strong></p>
     <p><strong>Date:</strong> February 16–17, 2026</p>
     <p><strong>Venue:</strong> Manipal University Jaipur, Jaipur, Rajasthan, INDIA</p>
-    <div class="note">
-        <strong>Note:</strong> In case of any discrepancy, the paper would be discarded without any refund of registration fees
-    </div>
+    <p>Note: In case of any discrepancy, the paper would be discarded without any refund of registration fees</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -1926,11 +1926,15 @@ with st.form("submission_form", clear_on_submit=False):
     st.markdown("####  Paper Details")
     
     # Paper ID field (full width)
+    st.markdown("**Enter Paper ID \\***")
+
     paper_id = st.text_input(
-        "Paper ID *",
-        help="Enter your paper ID (manually provided)",
-        key="paper_id_input"
-    )
+    "",
+    key="paper_id_input",
+    label_visibility="collapsed"
+)
+
+
     
     # Title on its own line (full width)
     title = st.text_input(
@@ -2016,7 +2020,7 @@ with st.form("submission_form", clear_on_submit=False):
         
         presenter_name_manual = st.text_input(
             "Presenter Name *",
-            placeholder="Enter Name Manually",
+            placeholder="Type Name Manually",
             key="presenter_name_manual",
             help="Enter manually if not in the list above",
             label_visibility="visible"
@@ -2048,7 +2052,7 @@ with st.form("submission_form", clear_on_submit=False):
         
         presenter_affiliation_manual = st.text_input(
             "Presenter Affiliation *",
-            placeholder="Enter Affiliation Manually",
+            placeholder="Type Affiliation Manually",
             key="presenter_affil_manual",
             help="Enter manually if not in the list above",
             label_visibility="visible"
@@ -2083,7 +2087,7 @@ with st.form("submission_form", clear_on_submit=False):
 
         presenter_email_manual = st.text_input(
             "Presenter Email *",
-            placeholder="Enter Email Manually",
+            placeholder="Type Email Manually",
             key="presenter_email_manual",
             help="Enter manually if not in the list above",
             label_visibility="visible"
@@ -2118,8 +2122,8 @@ with st.form("submission_form", clear_on_submit=False):
             nationality = selected_nat_option
 
     nationality_manual = st.text_input(
-            "Or Enter Nationality Manually",
-            placeholder="Enter Nationality Manually ",
+            "Enter Nationality Manually",
+            placeholder="Type Nationality ",
             key="nationality_manual",
             help="Enter manually if not in the list above"
         )
@@ -2171,11 +2175,12 @@ with st.form("submission_form", clear_on_submit=False):
         # ========== WHATSAPP GROUP - FIXED TO SHOW LINK ==========
 
     whatsapp_joined = st.radio(
-            "Have you joined the WhatsApp Group for further communication? *",
-            options=["Yes", "No"],
-            horizontal=True,
-            key="whatsapp_radio"
-        )
+    "Have you joined the WhatsApp Group for further communication? *",
+    options=["Yes"],
+    index=None,            # 👈 makes it unchecked
+    horizontal=True,
+    key="whatsapp_radio"
+)
 
         # ALWAYS show the WhatsApp link - not just when "No" is selected
     st.markdown(f"""
@@ -2313,7 +2318,10 @@ if submitted:
             st.error(f" CSV logging error: {e}")
 
         st.session_state.show_success = True
-        st.rerun()   
+        st.rerun()
+
+
+    
 
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 st.markdown("<div style='text-align: center; color: gray; font-size: 12px;'>Developed by SDC</div>", unsafe_allow_html=True)
