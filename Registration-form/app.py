@@ -2016,7 +2016,7 @@ with st.form("submission_form", clear_on_submit=False):
         
         presenter_name_manual = st.text_input(
             "Presenter Name *",
-            placeholder="Enter name manually",
+            placeholder="Enter Name Manually",
             key="presenter_name_manual",
             help="Enter manually if not in the list above",
             label_visibility="visible"
@@ -2119,7 +2119,7 @@ with st.form("submission_form", clear_on_submit=False):
 
     nationality_manual = st.text_input(
             "Or Enter Nationality Manually",
-            placeholder="Enter Nationality ",
+            placeholder="Enter Nationality Manually ",
             key="nationality_manual",
             help="Enter manually if not in the list above"
         )
