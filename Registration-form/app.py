@@ -2313,10 +2313,7 @@ if submitted:
             st.error(f" CSV logging error: {e}")
 
         st.session_state.show_success = True
-        st.rerun()
-
-
-    
+        st.rerun()   
 
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 st.markdown("<div style='text-align: center; color: gray; font-size: 12px;'>Developed by SDC</div>", unsafe_allow_html=True)
