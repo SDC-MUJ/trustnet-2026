@@ -2172,32 +2172,34 @@ with st.form("submission_form", clear_on_submit=False):
     if uploaded_word:
             st.success(f" {uploaded_word.name}")
 
-        # ========== WHATSAPP GROUP - FIXED TO SHOW LINK ==========
 
+
+    # WhatsApp link (IMMEDIATELY below the question)
+    st.markdown(
+        "<b>Have you joined the WhatsApp Group for further communication? <span style='color:red'>*</span></b>",
+        unsafe_allow_html=True
+    )
+
+    # WhatsApp link (IMMEDIATELY below the question)
+    st.markdown(
+        f"""
+        <a href="{WHATSAPP_GROUP_LINK}" target="_blank"
+        style="color:#1a73e8; font-weight:600; text-decoration:underline;">
+            {WHATSAPP_GROUP_LINK}
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
+
+    # Radio button (unchecked by default)
     whatsapp_joined = st.radio(
-    "Have you joined the WhatsApp Group for further communication? *",
-    options=["Yes"],
-    index=None,            # 👈 makes it unchecked
-    horizontal=True,
-    key="whatsapp_radio"
-)
-
-        # ALWAYS show the WhatsApp link - not just when "No" is selected
-    st.markdown(f"""
-        <div style='background-color: #E3F2FD; padding: 12px; border-radius: 6px; border-left: 4px solid #2196F3; margin-top: 10px;'>
-            <p style='margin: 0; color: #000000; font-size: 16px;'>
-                 <strong>WhatsApp Group Link:</strong><br>
-                <a href='{WHATSAPP_GROUP_LINK}' target='_blank' style='color: #FF6B35; font-weight: bold; text-decoration: underline; font-size: 16px;'>
-                    https://chat.whatsapp.com/Jxv6rg1BFL2C7TThfYubUc
-                </a>
-            </p>
-        </div>
-        """, unsafe_allow_html=True)
-
-    if whatsapp_joined == "No":
-            st.warning(" Please join the WhatsApp group for important updates!")
-
-    st.markdown("---")
+        "",
+        options=["Yes"],
+        index=None,
+        horizontal=True,
+        key="whatsapp_radio",
+        label_visibility="collapsed"
+    )
 
     consent = st.checkbox(" I confirm all information is Correct *")
 
