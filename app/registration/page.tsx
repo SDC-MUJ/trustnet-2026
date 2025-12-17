@@ -83,12 +83,17 @@ const Registration = () => {
             </h3>
             <p className="mb-2">Payment link:</p>
             <div className="flex gap-4 mb-4">
-              <button className="bg-secondaryBg text-white px-4 py-2 rounded">
-                Indian participants
-              </button>
-              <button className="bg-secondaryBg text-white px-4 py-2 rounded">
-                International/Foreign participants
-              </button>
+              <a href="https://rzp.io/rzp/mdjWN4A" target="_blank" rel="noopener noreferrer">
+                <button className="bg-secondaryBg text-white px-4 py-2 rounded">
+                  Indian participants
+                </button>
+              </a>
+      
+              <a href="https://rzp.io/rzp/bJkUGHIU" target="_blank" rel="noopener noreferrer">
+                <button className="bg-secondaryBg text-white px-4 py-2 rounded">
+                  International/Foreign participants
+                </button>
+              </a>
             </div>
           </div>
 
@@ -96,14 +101,14 @@ const Registration = () => {
             <h3 className="text-xl font-bold mb-2">
               Step 2: Fill the Registration form
             </h3>
-            {/* <a
-              href="https://trustnetcon.in/#"
+            <a
+              href="https://forms.gle/oTpNb7hsXK49sTC88"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
             >
               Click here for the registration form
-            </a> */}
+            </a>
           </div>
 
           <div>
