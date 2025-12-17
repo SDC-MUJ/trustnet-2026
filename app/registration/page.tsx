@@ -66,9 +66,9 @@ const Registration = () => {
           <p className="mb-4 text-lg">
             <strong>Paper Page Limit:</strong> 10-12 pages
           </p>
-          <p className="mb-4">
+          {/* <p className="mb-4">
             <strong>Extra Page Charges (per page):</strong> INR 2000 / USD 25
-          </p>
+          </p> */}
           <p className="mb-6">
             <strong>Note:</strong> Registration fee is NOT refundable.
           </p>
