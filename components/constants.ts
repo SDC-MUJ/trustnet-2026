@@ -134,6 +134,13 @@ export const speakers = [
         profileimage: '/images/speakers/apurva.png',
         linkedin: 'https://ie.linkedin.com/in/apurva-k-vangujar-a36a627b',
     },
+    {
+        id: 3,
+        fullName: 'Dr. Somanath Tripathy',
+        des: 'Department of Computer Science & Engineering, IIT Patna',
+        profileimage: '/images/speakers/somanath-tripathy.png',
+        website: 'https://www.iitp.ac.in/~som/'
+    },
     // {
     //     id: 2,
     //     fullName: 'Rajat Mittal ',
