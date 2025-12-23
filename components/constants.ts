@@ -81,21 +81,38 @@ export const menu = [
         link: '#footer', // Changed from '/#Contact'
         newTab: false,
     },
+    // {
+    //     id: 7,
+    //     label: 'Important Links',
+    //     link: '#',
+    //     dropdownItems: [
+    //         {
+    //             id: 'reviewer-details',
+    //             label: 'Form for reviewer details',
+    //             link: 'https://forms.gle/RJaeQfVdSoHR5mzc8',
+    //             newTab: true,
+    //         },
+    //         {
+    //             id: 'special-session',
+    //             label: 'Special Session Proposal',
+    //             link: '/special-session',
+    //         },
+    //     ],
+    // },
     {
         id: 7,
-        label: 'Important Links',
-        link: '#',
+        label: 'Special Sessions',
+        link: '/special-sessions',
         dropdownItems: [
             {
-                id: 'reviewer-details',
-                label: 'Form for reviewer details',
-                link: 'https://forms.gle/RJaeQfVdSoHR5mzc8',
-                newTab: true,
+                id: 'special-sessions',
+                label: 'Special Sessions',
+                link: '/special-sessions',
             },
             {
-                id: 'special-session',
+                id: 'special-session-proposal',
                 label: 'Special Session Proposal',
-                link: '/special-session',
+                link: '/special-session-proposal',
             },
         ],
     },
