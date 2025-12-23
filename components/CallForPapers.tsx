@@ -334,7 +334,7 @@ const CallForPapers = () => {
             className="max-w-7xl mx-auto mt-20 text-center"
           >
             <Image
-              src="/brochure/trustnet-brochure.jpeg"
+              src="/brochure/trustnet-brochure.jpg"
               alt="TrustNet Brochure"
               width={950}
               height={600}
