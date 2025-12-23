@@ -124,7 +124,7 @@ export const speakers = [
         fullName: 'Dr. Anupam Tiwari',
         des: 'Cyber Advisor , Ministry of Defence , Government of India',
         profileimage: '/images/speakers/anupam-tiwari.png',
-        linkedin: '#',
+        // linkedin: '#',
         website: '#'
     },
     {
@@ -140,6 +140,13 @@ export const speakers = [
         des: 'Department of Computer Science & Engineering, IIT Patna',
         profileimage: '/images/speakers/somanath-tripathy.png',
         website: 'https://www.iitp.ac.in/~som/'
+    },
+    {
+        id: 4,
+        fullName: 'Dr. Maanak Gupta',
+        des: 'Department of Computer Science, Tennessee Tech University, TN, USA',
+        profileimage: '/images/speakers/maanak-gupta.png',
+        website: 'https://www.tntech.edu/directory/engineering/faculty/maanak-gupta.php'
     },
     // {
     //     id: 2,
