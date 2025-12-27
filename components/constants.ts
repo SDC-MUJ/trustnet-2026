@@ -148,6 +148,13 @@ export const speakers = [
         profileimage: '/images/speakers/maanak-gupta.png',
         website: 'https://www.tntech.edu/directory/engineering/faculty/maanak-gupta.php'
     },
+    {
+        id: 5,
+        fullName: 'Chhagan Lal',
+        des: 'Cybersecurity Researcher, CISaR Group, NTNU | EU CYBERUNITY Project',
+        profileimage: '/images/speakers/chhagan-lal.jpg',
+        website: 'https://www.ntnu.edu/employees/chhagan.lal'
+    },
     // {
     //     id: 2,
     //     fullName: 'Rajat Mittal ',
