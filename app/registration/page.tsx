@@ -22,9 +22,9 @@ const Registration = () => {
       <div className="p-8 md:p-16">
         <div className="prose max-w-none text-justify text-lg">
           <p className="mb-6">
-            The authors agree that if the paper is accepted for oral/ poster
+            The authors agree that if the paper is accepted for oral
             presentation, at least one of the authors will register for the
-            conference and present the paper at the conference venue. The
+            conference and present the paper. The
             registration fee is given below for your
             reference:
           </p>
