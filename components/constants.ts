@@ -150,7 +150,7 @@ export const speakers = [
     },
     {
         id: 5,
-        fullName: 'Chhagan Lal',
+        fullName: 'Dr. Chhagan Lal',
         des: 'Cybersecurity Researcher, CISaR Group, NTNU | EU CYBERUNITY Project',
         profileimage: '/images/speakers/chhagan-lal.jpg',
         website: 'https://www.ntnu.edu/employees/chhagan.lal'
