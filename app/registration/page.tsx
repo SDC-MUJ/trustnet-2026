@@ -81,7 +81,7 @@ const Registration = () => {
             <h3 className="text-xl font-bold mb-2">
               Step 1: Pay Registration Fee
             </h3>
-            <p className="mb-2">Payment link:</p>
+            {/* <p className="mb-2">Payment link:</p>
             <div className="flex gap-4 mb-4">
               <a href="https://rzp.io/rzp/mdjWN4A" target="_blank" rel="noopener noreferrer">
                 <button className="bg-secondaryBg text-white px-4 py-2 rounded">
@@ -94,7 +94,7 @@ const Registration = () => {
                   International/Foreign participants
                 </button>
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div className="mb-8">
