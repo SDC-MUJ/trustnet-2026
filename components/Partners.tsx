@@ -20,7 +20,7 @@ const Partners = () => {
             />
             <Image
               src="/images/logo/deakin-university.svg"
-              alt="Unstop Logo"
+              alt="Deakin University Logo"
               width={200}
               height={100}
               className="object-contain"

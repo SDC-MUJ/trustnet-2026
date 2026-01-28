@@ -23,7 +23,7 @@ const Navbar = () => {
   const handleNavigation = (
     link: string,
     newTab?: boolean,
-    download?: string
+    download?: string,
   ) => {
     if (download) {
       // Create a temporary anchor element to trigger download
@@ -130,7 +130,7 @@ const Navbar = () => {
                                           handleNavigation(
                                             dropdownItem.link,
                                             dropdownItem.newTab,
-                                            dropdownItem.download
+                                            dropdownItem.download,
                                           )
                                         }
                                         className="text-sm text-gray-600 hover:text-gray-900 transition-all flex items-center gap-3 w-full pl-3"
@@ -159,6 +159,13 @@ const Navbar = () => {
                         />
 
                         <div className="flex items-center gap-4">
+                          <Image
+                            src="/images/logo/deakin-university.svg"
+                            alt="Deakin University"
+                            width={90}
+                            height={24}
+                            className="w-20"
+                          />
                           <Image
                             src="/images/logo/unstop-logo.png"
                             alt="Unstop"
@@ -210,6 +217,13 @@ const Navbar = () => {
           </div>
           {/* <Image className='hidden lg:block w-24' src={'/images/logo/azadi-mahotsav-logo.png'} alt="Azadi Ka Amrit Mahotsav" width={100} height={50} /> */}
           <div className="hidden lg:flex items-center gap-4">
+            <Image
+              className="w-20 mr-4"
+              src="/images/logo/deakin-university.svg"
+              alt="Deakin University"
+              width={90}
+              height={24}
+            />
             <Image
               className="w-24 mr-2"
               src="/images/logo/unstop-logo.png"
@@ -278,7 +292,7 @@ const Navbar = () => {
                           handleNavigation(
                             dropdownItem.link,
                             dropdownItem.newTab,
-                            dropdownItem.download
+                            dropdownItem.download,
                           )
                         }
                         className="block w-full text-left px-4 py-2 hover:bg-gray-100 font-semibold whitespace-nowrap"
