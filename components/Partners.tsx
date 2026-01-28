@@ -10,9 +10,16 @@ const Partners = () => {
             Conference Partners
             <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-28 h-0.5 bg-orange-300 rounded-full"></div>
           </h2>
-          <div className="flex flex-wrap justify-center items-center gap-8">
+          <div className="flex flex-wrap justify-center items-center gap-14">
             <Image
               src="/images/logo/unstop-logo.png"
+              alt="Unstop Logo"
+              width={200}
+              height={100}
+              className="object-contain"
+            />
+            <Image
+              src="/images/logo/deakin-university.svg"
               alt="Unstop Logo"
               width={200}
               height={100}
