@@ -5,6 +5,7 @@ const internationalMembers = [
         "San Francisco State University, San Francisco, CA, USA",
     ],
     ["Rajkumar Buyya", "University of Melbourne, Australia"],
+    ["Irfa Javed", "Manager-Partnership (South Asia), Deakin University, Australia"],
     [
         "Robin T. Bye",
         "Norwegian University of Science and Technology, Alesund, Norway",
