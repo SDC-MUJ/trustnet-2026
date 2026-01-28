@@ -155,6 +155,14 @@ export const speakers = [
         profileimage: '/images/speakers/chhagan-lal.jpg',
         website: 'https://www.ntnu.edu/employees/chhagan.lal'
     },
+    {
+        id: 6,
+        fullName: 'Dr. Gang Li',
+        des: 'Professor, Deakin University, School of Information Technology',
+        profileimage: '/images/speakers/gang-li.png',
+        website: 'https://scholar.google.com.au/citations?user=dqwjm-0AAAAJ&hl=en',
+        linkedin: 'https://www.linkedin.com/in/ligang/'
+    },
     // {
     //     id: 2,
     //     fullName: 'Rajat Mittal ',
