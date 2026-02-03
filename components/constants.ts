@@ -163,6 +163,13 @@ export const speakers = [
         website: 'https://scholar.google.com.au/citations?user=dqwjm-0AAAAJ&hl=en',
         linkedin: 'https://www.linkedin.com/in/ligang/'
     },
+    {
+        id: 7,
+        fullName: 'Dr. Mano Manoharan',
+        des: 'Senior Lecturer, Computer Science, University Of Auckland',
+        profileimage: '/images/speakers/mano-manoharan.jpeg',
+        website: 'https://profiles.auckland.ac.nz/mano-manoharan',
+    },
     // {
     //     id: 2,
     //     fullName: 'Rajat Mittal ',
