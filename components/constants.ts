@@ -122,41 +122,27 @@ export const speakers = [
     {
         id: 1,
         fullName: 'Dr. Anupam Tiwari',
-        des: 'Cyber Advisor , Ministry of Defence , Government of India',
+        des: 'Principal Advisor, Ministry of Defence, Government of India',
         profileimage: '/images/speakers/anupam-tiwari.png',
         // linkedin: '#',
         website: '#'
     },
     {
         id: 2,
-        fullName: 'Apurva K Vangujar',
-        des: 'Cyber Security Engineer, Jaguar Land Rover',
-        profileimage: '/images/speakers/apurva.png',
-        linkedin: 'https://ie.linkedin.com/in/apurva-k-vangujar-a36a627b',
-    },
-    {
-        id: 3,
         fullName: 'Dr. Somanath Tripathy',
         des: 'Department of Computer Science & Engineering, IIT Patna',
         profileimage: '/images/speakers/somanath-tripathy.png',
         website: 'https://www.iitp.ac.in/~som/'
     },
     {
+        id: 3,
+        fullName: 'Dr. Mano Manoharan',
+        des: 'Senior Lecturer, Computer Science, University Of Auckland',
+        profileimage: '/images/speakers/mano-manoharan.jpeg',
+        website: 'https://profiles.auckland.ac.nz/mano-manoharan',
+    },
+    {
         id: 4,
-        fullName: 'Dr. Maanak Gupta',
-        des: 'Department of Computer Science, Tennessee Tech University, TN, USA',
-        profileimage: '/images/speakers/maanak-gupta.png',
-        website: 'https://www.tntech.edu/directory/engineering/faculty/maanak-gupta.php'
-    },
-    {
-        id: 5,
-        fullName: 'Dr. Chhagan Lal',
-        des: 'Cybersecurity Researcher, CISaR Group, NTNU | EU CYBERUNITY Project',
-        profileimage: '/images/speakers/chhagan-lal.jpg',
-        website: 'https://www.ntnu.edu/employees/chhagan.lal'
-    },
-    {
-        id: 6,
         fullName: 'Dr. Gang Li',
         des: 'Professor, Deakin University, School of Information Technology',
         profileimage: '/images/speakers/gang-li.png',
@@ -164,11 +150,46 @@ export const speakers = [
         linkedin: 'https://www.linkedin.com/in/ligang/'
     },
     {
+        id: 5,
+        fullName: 'Dr. Maanak Gupta',
+        des: 'Department of Computer Science, Tennessee Tech University, TN, USA',
+        profileimage: '/images/speakers/maanak-gupta.png',
+        website: 'https://www.tntech.edu/directory/engineering/faculty/maanak-gupta.php'
+    },
+    {
+        id: 6,
+        fullName: 'Dr. Chhagan Lal',
+        des: 'Cybersecurity Researcher, CISaR Group, NTNU | EU CYBERUNITY Project',
+        profileimage: '/images/speakers/chhagan-lal.jpg',
+        website: 'https://www.ntnu.edu/employees/chhagan.lal'
+    },
+    {
         id: 7,
-        fullName: 'Dr. Mano Manoharan',
-        des: 'Senior Lecturer, Computer Science, University Of Auckland',
-        profileimage: '/images/speakers/mano-manoharan.jpeg',
-        website: 'https://profiles.auckland.ac.nz/mano-manoharan',
+        fullName: 'Apurva K Vangujar',
+        des: 'Cyber Security Engineer, Jaguar Land Rover',
+        profileimage: '/images/speakers/apurva.png',
+        linkedin: 'https://ie.linkedin.com/in/apurva-k-vangujar-a36a627b',
+    },
+    {
+        id: 8,
+        fullName: 'Shiva Kumara',
+        des: 'Principal Architect, Cybersecurity, T-Mobile USA, Inc',
+        profileimage: '/images/speakers/shiva-kumara.png',
+        linkedin: 'https://www.linkedin.com/in/shiva-kumara-cybersecurity/',
+    },
+    {
+        id: 9,
+        fullName: 'Mohamed Nawas',
+        des: 'Digital Transformation & Compliance Strategist at National Bank of Kuwait',
+        profileimage: '/images/speakers/mohamed-nawas.png',
+        linkedin: 'https://www.linkedin.com/in/mohamed-nawas-1b043ab/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+    },
+    {
+        id: 10,
+        fullName: 'Henry Cyril',
+        des: 'Principal Engineer at T-Mobile USA',
+        profileimage: '/images/speakers/henry-cyril.png',
+        linkedin: 'https://www.linkedin.com/in/henrypradeep/',
     },
     // {
     //     id: 2,
