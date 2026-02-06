@@ -191,6 +191,27 @@ export const speakers = [
         profileimage: '/images/speakers/henry-cyril.png',
         linkedin: 'https://www.linkedin.com/in/henrypradeep/',
     },
+    {
+        id: 11,
+        fullName: 'Dileep Somajohassula',
+        des: 'Senior Software Engineer at SS & C Technologies',
+        profileimage: '/images/speakers/dileep.png',
+        linkedin: 'https://www.linkedin.com/in/dileep-somajohassula-a20bb32b/',
+    },
+    {
+        id: 12,
+        fullName: 'Bright Ojo',
+        des: 'FNIPES, Texas, USA ',
+        profileimage: '/images/speakers/bright-ojo.png',
+        linkedin: 'https://www.linkedin.com/in/bright-ojo-fnipes-719047244/',
+    },
+    {
+        id: 13,
+        fullName: 'Murali Gandhi ',
+        des: 'Data & Analytics Senior Lead at Microsoft, Texas USA',
+        profileimage: '/images/speakers/murali-gandhi.png',
+        linkedin: 'https://www.linkedin.com/in/mgrandhi',
+    },
     // {
     //     id: 2,
     //     fullName: 'Rajat Mittal ',
