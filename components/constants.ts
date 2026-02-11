@@ -207,7 +207,7 @@ export const speakers = [
     },
     {
         id: 13,
-        fullName: 'Murali Gandhi ',
+        fullName: 'Murali Grandhi ',
         des: 'Data & Analytics Senior Lead at Microsoft, Texas USA',
         profileimage: '/images/speakers/murali-gandhi.png',
         linkedin: 'https://www.linkedin.com/in/mgrandhi',
