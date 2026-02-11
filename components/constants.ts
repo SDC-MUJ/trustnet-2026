@@ -322,13 +322,13 @@ export const committee = {
             role: 'Organizing Chair',
             picture: '/images/committee/ankur-pandey.jpg',
         },
-        {
-            id: 14,
-            name: 'Dr. Amit Kumar Gupta',
-            des: 'Assistant Professor, CSE',
-            role: 'Organizing Co-Chair',
-            picture: '/images/committee/amit-kumar-gupta.jpg',
-        },
+        // {
+        //     id: 14,
+        //     name: 'Dr. Amit Kumar Gupta',
+        //     des: 'Assistant Professor, CSE',
+        //     role: 'Organizing Co-Chair',
+        //     picture: '/images/committee/amit-kumar-gupta.jpg',
+        // },
         {
             id: 15,
             name: 'Dr. Neetu Gupta',
@@ -809,3 +809,144 @@ export const committee = {
         },
     ],
 }
+
+export const updatedOrganizingCommitteeGroups = [
+    {
+        role: 'Liaisoning Officer Dr. Anupam Tiwari',
+        members: ['Dr Manish Gupta'],
+    },
+    {
+        role: 'Liaisoning Officer Dr Manak Gupta',
+        members: ['Dr. Madhu Sharma'],
+    },
+    {
+        role: 'Liaisoning Officer Dr. Somnath Tripathi',
+        members: ['Dr Dibakar Sinha'],
+    },
+    {
+        role: 'Liaisoning Officer Dr. Manu Manoharan',
+        members: ['Dr Rishi Shrivastava'],
+    },
+    {
+        role: 'Finance Committee',
+        members: [
+            'Dr. Rishi Gupta (Coordinator)',
+            'Dr. Amit Kumar Gupta',
+            'Dr. Ashok Kumar Saini',
+        ],
+    },
+    {
+        role: 'Registration Committee',
+        members: [
+            'Dr. Bali Devi (Coordinator)',
+            'Ms. Babita Tiwari (Coordinator)',
+            'Ms. Tripti Kulshrestha',
+            'Dr. Kuntal Gaur',
+            'Dr. Prashant Vats',
+            'Dr. Sushama',
+        ],
+    },
+    {
+        role: 'Stage Management',
+        members: [
+            'Dr. Anita Shrotriya (Coordinator)',
+            'Dr Nandini Babbar',
+            'Ms. Shweta Sharma',
+            'Dr. Susheela Vishnoi',
+            'Dr. Rishi Kumar Srivastva',
+        ],
+    },
+    {
+        role: 'Food Committee',
+        members: [
+            'Mr. Lav Upadhyay (Coordinator)',
+            'Ms. Surbhi Syal',
+            'Ms. Neha Singh',
+            'Dr. Pradeep Kumar',
+            'Dr. Venkatesh Gauri Shankar (Coordinator)',
+            'Mr. Anil Kumar',
+        ],
+    },
+    {
+        role: 'Keynote Session Moderator & Pannel Discussion',
+        members: [
+            'Dr. Riddhi Arora (Coordinator)',
+            'Dr. Amandeep Cheema',
+            'Ms. Gunjan Pathak',
+        ],
+    },
+    {
+        role: 'Networking Diner Management',
+        members: [
+            'Dr. Shishir Singh Chauhan (Coordinator)',
+            'Mr. Bhawani Singh Rathore',
+        ],
+    },
+    {
+        role: 'Print Media',
+        members: ['Dr. Sayar Singh Shekhawat (Coordinator)', 'Dr. Vaishali Chauhan'],
+    },
+    {
+        role: 'Publication committee',
+        members: ['Dr. Akshay Jadhav (Coordinator)', 'Dr. Mayank Namdev (Coordinator)'],
+    },
+    {
+        role: 'Technical Session Management (Online/Offline) Session Moderator',
+        members: [
+            'Dr. Satpal Singh Kushwaha (Coordinator)',
+            'Dr. Tarun Jain (Coordinator)',
+            'Dr. Aditya Sinha (Coordinator)',
+            'Dr. Ajay Kumar',
+            'Dr. Arpita Baronia',
+            'Dr. Pallavi',
+            'Ms. Vaishali Chauhan',
+            'Dr Manish Gupta',
+            'Dr. Abhishek Dwivedi',
+            'Dr. Divya Thakur',
+            'Dr. Onkar Singh',
+            'Dr. Girish Sharma',
+            'Dr. Tapan Kumar Dey',
+            'Dr. Aditya Narayan Hati',
+            'Mr. Ravinder Kumar',
+            'Dr. Madhu Sharma',
+        ],
+    },
+    {
+        role: 'Souvenir',
+        members: [
+            'Dr. Sakshi Shringi (Coordinator)',
+            'Dr. Usha Jain',
+            'Dr. Surbhi Sharma',
+            'Ms. Soni Gupta',
+        ],
+    },
+    {
+        role: 'Transportation and Accommodation',
+        members: [
+            'Mr. Harish Sharma (Coordinator)',
+            'Mr. Abhay Singh Bisht (Coordinator)',
+            'Dr. Shivendra Dubey',
+        ],
+    },
+    {
+        role: 'Web & IT Support Committee',
+        members: ['Dr. Ajit Noonia (Coordinator)', 'Dr. Dibakar Sinha'],
+    },
+    // {
+    //     role: 'Student Volunteer',
+    //     members: [
+    //         'Samaksh Gupta (Coordinator)',
+    //         'Aryan Verma (Coordinator)',
+    //         'Tiya Chhabra (Coordinator)',
+    //         'Satya Agrawal (Coordinator)',
+    //         'Parv Rangbulla',
+    //         'Harshit Attri',
+    //         'Kshitij Verma',
+    //         'Tamanna Yadav',
+    //         'Mehul Bhardwaj',
+    //         'Krishna Goel',
+    //         'Gayathri Ravindran',
+    //         'Yashi Gupta',
+    //     ],
+    // },
+]
