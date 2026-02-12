@@ -121,7 +121,7 @@ export const menu = [
 export const scheduleDropdown = [
     {
         id: 'schedule-02',
-        label: 'Inaugral Ceremony',
+        label: 'Inaugural Ceremony',
         link: '/schedule/schedule-02.pdf',
         newTab: true,
     },
