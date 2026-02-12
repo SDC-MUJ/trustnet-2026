@@ -64,7 +64,7 @@ const Navbar = () => {
     <>
       <div className="sticky top-0 z-20 md:relative w-full gap-2 flex flex-col justify-center items-center px-4 sm:px-8 md:px-16 bg-white">
         <div className="w-full flex flex-wrap justify-between items-center border-b-2">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 flex-none">
             <Link href="/#" className="cursor-pointer">
               <Image
                 className="w-44 sm:w-48 lg:w-60 p-2"
@@ -150,9 +150,13 @@ const Navbar = () => {
                       </div>
                       <div className="flex flex-col gap-4 w-full">
                         <div className="flex flex-col gap-2 w-full">
-                          <span className="font-semibold text-left">
-                            Schedule
-                          </span>
+                          <Image
+                            src="/images/graphics/schedule-icon.png"
+                            alt="Schedule"
+                            width={96}
+                            height={28}
+                            className="inline-block object-contain w-16 sm:w-20 md:w-24 h-auto"
+                          />
                           <div className="flex flex-col gap-2 w-full">
                             {scheduleDropdown.map((item) => (
                               <SheetClose asChild key={item.id}>
@@ -176,7 +180,7 @@ const Navbar = () => {
                           alt="Hybrid Icon"
                           width={100}
                           height={40}
-                          className="cursor-pointer"
+                          className="cursor-pointer w-16 sm:w-20 md:w-24 object-contain"
                           onClick={() => handleNavigation("/#register")}
                         />
 
@@ -292,14 +296,14 @@ const Navbar = () => {
         </div>
       </div>
       <div className="sticky top-0 z-20 px-16 py-2 bg-white hidden md:flex justify-between items-center gap-8 drop-shadow-xl">
-        <div className="flex justify-center items-center gap-8">
+        <div className="flex-1 flex justify-center items-center gap-8 flex-nowrap min-w-0">
           {menu.map((item) => (
-            <div key={item.id} className="relative group">
+            <div key={item.id} className="relative group min-w-0">
               <button
                 onClick={() =>
                   !item.dropdownItems && handleNavigation(item.link)
                 }
-                className="font-semibold hover:underline transition-all flex items-center gap-1"
+                className="font-semibold hover:underline transition-all flex items-center gap-1 whitespace-nowrap text-[clamp(0.88rem,1.25vw,1.06rem)] px-1.5 md:px-2 py-1"
               >
                 {item.label}
                 {item.dropdownItems && <ChevronDown className="w-4 h-4" />}
@@ -330,10 +334,13 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-6">
           <div className="relative group">
-            <button className="font-semibold hover:underline transition-all flex items-center gap-1">
-              Conference Schedule
-              <ChevronDown className="w-4 h-4" />
-            </button>
+            <Image
+              src="/images/graphics/schedule-icon.png"
+              alt="Schedule"
+              width={96}
+              height={28}
+              className="object-contain w-16 sm:w-20 md:w-24 h-auto"
+            />
             <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-55 bg-white border rounded-md shadow-lg transition-all duration-200 right-0">
               <div className="py-1">
                 {scheduleDropdown.map((item) => (
@@ -353,7 +360,7 @@ const Navbar = () => {
             alt="Hybrid Icon"
             width={100}
             height={40}
-            className="cursor-pointer"
+            className="cursor-pointer w-16 sm:w-20 md:w-24 object-contain"
             onClick={() => handleNavigation("/#register")}
           />
         </div>

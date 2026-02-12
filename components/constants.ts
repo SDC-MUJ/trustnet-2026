@@ -5,12 +5,12 @@ export const menu = [
         link: '/',
         newTab: false,
     },
-    {
-        id: 1,
-        label: 'About',
-        link: '/#Introduction',
-        newTab: false,
-    },
+    // {
+    //     id: 1,
+    //     label: 'About',
+    //     link: '/#Introduction',
+    //     newTab: false,
+    // },
     {
         id: 4,
         label: 'Call for Papers',
