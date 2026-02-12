@@ -118,6 +118,27 @@ export const menu = [
     },
 ]
 
+export const scheduleDropdown = [
+    {
+        id: 'schedule-02',
+        label: 'Inaugral Ceremony',
+        link: '/schedule/schedule-02.pdf',
+        newTab: true,
+    },
+    {
+        id: 'schedule-01',
+        label: 'Program Schedule',
+        link: '/schedule/schedule-01.pdf',
+        newTab: true,
+    },
+    {
+        id: 'schedule-03',
+        label: 'Paper Presentation',
+        link: '/schedule/schedule-03.pdf',
+        newTab: true,
+    },
+]
+
 export const speakers = [
     {
         id: 1,

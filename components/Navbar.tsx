@@ -13,7 +13,7 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { Menu, ChevronDown } from "lucide-react";
-import { menu } from "@/components/constants";
+import { menu, scheduleDropdown } from "@/components/constants";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -148,7 +148,29 @@ const Navbar = () => {
                           </div>
                         ))}
                       </div>
-                      <div className="flex flex-col gap-4">
+                      <div className="flex flex-col gap-4 w-full">
+                        <div className="flex flex-col gap-2 w-full">
+                          <span className="font-semibold text-left">
+                            Schedule
+                          </span>
+                          <div className="flex flex-col gap-2 w-full">
+                            {scheduleDropdown.map((item) => (
+                              <SheetClose asChild key={item.id}>
+                                <button
+                                  onClick={() =>
+                                    handleNavigation(item.link, item.newTab)
+                                  }
+                                  className="text-sm text-gray-600 hover:text-gray-900 transition-all flex items-center gap-3 w-full pl-3"
+                                >
+                                  <span className="w-1.5 h-1.5 rounded-full bg-gray-400 flex-shrink-0"></span>
+                                  <span className="text-left">
+                                    {item.label}
+                                  </span>
+                                </button>
+                              </SheetClose>
+                            ))}
+                          </div>
+                        </div>
                         <Image
                           src="/images/graphics/hybrid-icon.png"
                           alt="Hybrid Icon"
@@ -306,7 +328,26 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-        <div>
+        <div className="flex items-center gap-6">
+          <div className="relative group">
+            <button className="font-semibold hover:underline transition-all flex items-center gap-1">
+              Conference Schedule
+              <ChevronDown className="w-4 h-4" />
+            </button>
+            <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-55 bg-white border rounded-md shadow-lg transition-all duration-200 right-0">
+              <div className="py-1">
+                {scheduleDropdown.map((item) => (
+                  <button
+                    key={item.id}
+                    onClick={() => handleNavigation(item.link, item.newTab)}
+                    className="block w-full text-left px-4 py-2 hover:bg-gray-100 font-semibold whitespace-nowrap"
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
           <Image
             src="/images/graphics/hybrid-icon.png"
             alt="Hybrid Icon"
