@@ -310,7 +310,7 @@ export const committee = {
         },
         {
             id: 9,
-            name: 'Dr. U. S. Rawat',
+            name: 'Dr. Umashankar Rawat',
             des: 'Professor',
             role: 'Program Co-Chair',
             picture: '/images/committee/us-rawat.jpg',
